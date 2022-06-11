@@ -2,7 +2,12 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
 import { HomeScreen } from 'screens/Home';
 
-const RootStackNavigator = createNativeStackNavigator();
+type RootStackNavigatorScreens = {
+  Home: undefined;
+};
+
+const RootStackNavigator =
+  createNativeStackNavigator<RootStackNavigatorScreens>();
 
 export function RootStack() {
   return (
