@@ -1,18 +1,18 @@
-import { NavigationContainer } from '@react-navigation/native';
-import { RootStack } from 'navigation';
+import { RootNavigation } from 'navigation/RootNavigation';
 import React from 'react';
-import Storybook from '../.storybook/Storybook';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+
+if (__DEV__) {
+  import('./services/reactotron').then(() =>
+    console.log('Reactotron Configured')
+  );
+}
 
 const App = () => {
-  const [showStorybook, setShowStorybook] = React.useState(false);
-  if (__DEV__) {
-    const DevMenu = require('react-native-dev-menu');
-    DevMenu.addItem('Toggle Storybook', () => setShowStorybook(val => !val));
-  }
   return (
-    <NavigationContainer>
-      {showStorybook ? <Storybook /> : <RootStack />}
-    </NavigationContainer>
+    <SafeAreaProvider>
+      <RootNavigation />
+    </SafeAreaProvider>
   );
 };
 
