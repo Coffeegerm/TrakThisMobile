@@ -7,7 +7,7 @@ import {
 } from 'react-native';
 import tw from 'twrnc';
 
-type TextInputProps = TInputProps & {
+export type TextInputProps = TInputProps & {
   small?: boolean;
   large?: boolean;
   label?: string;
