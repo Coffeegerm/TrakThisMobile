@@ -3,7 +3,7 @@ import { AddTaskForm } from 'components/AddTaskForm/AddTaskForm';
 import { Screen } from 'components/Screen';
 import { useTasks } from 'hooks/useTasks';
 import React, { useRef, useState } from 'react';
-import { FlatList, Pressable, Text, View } from 'react-native';
+import { FlatList, Pressable, Text } from 'react-native';
 import ActionButton from 'react-native-action-button';
 import tw from 'twrnc';
 import { Task } from 'types/Task';
