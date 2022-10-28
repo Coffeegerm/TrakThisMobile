@@ -1,10 +1,17 @@
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import {
+  createNativeStackNavigator,
+  NativeStackScreenProps,
+} from '@react-navigation/native-stack';
 import React from 'react';
 import { Profile } from 'screens/Profile';
 
 type ProfileStackNavigatorScreens = {
   ProfileScreen: undefined;
 };
+export type ProfileScreenProps = NativeStackScreenProps<
+  ProfileStackNavigatorScreens,
+  'ProfileScreen'
+>;
 
 const ProfileStackNavigator =
   createNativeStackNavigator<ProfileStackNavigatorScreens>();

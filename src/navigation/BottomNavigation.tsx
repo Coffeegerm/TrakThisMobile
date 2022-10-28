@@ -1,12 +1,7 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MaterialIcon } from 'components/Icon';
 import React from 'react';
-import {
-  CalendarStack,
-  GroceriesStack,
-  ProfileStack,
-  TasksStack,
-} from './stacks';
+import { CalendarStack, GamesStack, NewsStack, ProfileStack } from './stacks';
 
 const Tab = createBottomTabNavigator();
 
@@ -14,8 +9,8 @@ export function BottomNavigation() {
   return (
     <Tab.Navigator screenOptions={{ headerShown: false }}>
       <Tab.Screen
-        name="Tasks"
-        component={TasksStack}
+        name="Games"
+        component={GamesStack}
         options={{
           tabBarIcon: () => (
             <MaterialIcon size="xl" color="gray" name="check-all" />
@@ -23,8 +18,8 @@ export function BottomNavigation() {
         }}
       />
       <Tab.Screen
-        name="Groceries"
-        component={GroceriesStack}
+        name="News"
+        component={NewsStack}
         options={{
           tabBarIcon: () => (
             <MaterialIcon size="xl" color="gray" name="food-apple" />

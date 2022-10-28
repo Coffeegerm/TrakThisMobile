@@ -2,23 +2,22 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
 import { GroceriesList } from 'screens/GroceriesList';
 
-type GroceriesStackNavigatorScreens = {
+type NewsStackParamsList = {
   GroceriesList: undefined;
 };
 
-const GroceriesStackNavigator =
-  createNativeStackNavigator<GroceriesStackNavigatorScreens>();
+const NewsStackNavigator = createNativeStackNavigator<NewsStackParamsList>();
 
-export function GroceriesStack() {
+export function NewsStack() {
   return (
-    <GroceriesStackNavigator.Navigator
+    <NewsStackNavigator.Navigator
       screenOptions={{
         headerShown: false,
       }}>
-      <GroceriesStackNavigator.Screen
+      <NewsStackNavigator.Screen
         name="GroceriesList"
         component={GroceriesList}
       />
-    </GroceriesStackNavigator.Navigator>
+    </NewsStackNavigator.Navigator>
   );
 }

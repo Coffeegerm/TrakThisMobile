@@ -1,3 +1,4 @@
+import { GlobalProvider } from 'contexts/Global';
 import { RootNavigation } from 'navigation/RootNavigation';
 import React from 'react';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
@@ -11,7 +12,9 @@ if (__DEV__) {
 const App = () => {
   return (
     <SafeAreaProvider>
-      <RootNavigation />
+      <GlobalProvider>
+        <RootNavigation />
+      </GlobalProvider>
     </SafeAreaProvider>
   );
 };
