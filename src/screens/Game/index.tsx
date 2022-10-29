@@ -1,5 +1,5 @@
 import { useGame } from 'hooks/useGame';
-import { GameScreenProps } from 'navigation/stacks';
+import { GameScreenProps } from 'navigation/stacks/bottom-navigation';
 import React from 'react';
 import { ActivityIndicator, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';

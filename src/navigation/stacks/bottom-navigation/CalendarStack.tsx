@@ -1,6 +1,6 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
-import { Events } from '../../screens/Events';
+import { Events } from '../../../screens/Events';
 
 type CalendarStackNavigatorScreens = {
   Events: undefined;

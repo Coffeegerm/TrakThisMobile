@@ -1,4 +1,5 @@
 import { GlobalProvider } from 'contexts/Global';
+import { NativeBaseProvider } from 'native-base';
 import { RootNavigation } from 'navigation/RootNavigation';
 import React from 'react';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
@@ -11,11 +12,13 @@ if (__DEV__) {
 
 const App = () => {
   return (
-    <SafeAreaProvider>
-      <GlobalProvider>
-        <RootNavigation />
-      </GlobalProvider>
-    </SafeAreaProvider>
+    <NativeBaseProvider>
+      <SafeAreaProvider>
+        <GlobalProvider>
+          <RootNavigation />
+        </GlobalProvider>
+      </SafeAreaProvider>
+    </NativeBaseProvider>
   );
 };
 

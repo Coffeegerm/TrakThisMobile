@@ -1,6 +1,6 @@
 import { FlashList } from '@shopify/flash-list';
 import { useGames } from 'hooks/useGames';
-import { GamesScreenProps } from 'navigation/stacks';
+import { GamesScreenProps } from 'navigation/stacks/bottom-navigation';
 import React from 'react';
 import { Pressable, RefreshControl, Text } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';

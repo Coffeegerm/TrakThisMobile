@@ -1,9 +1,12 @@
 import React from 'react';
 import { AccessTokenProvider } from './AccessToken';
+import { AuthProvider } from './AuthProvider';
 import { AxiosProvider } from './Axios';
 
 export const GlobalProvider = ({ children }: { children: React.ReactNode }) => (
   <AccessTokenProvider>
-    <AxiosProvider>{children}</AxiosProvider>
+    <AuthProvider>
+      <AxiosProvider>{children}</AxiosProvider>
+    </AuthProvider>
   </AccessTokenProvider>
 );

@@ -1,7 +1,7 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MaterialIcon } from 'components/Icon';
 import React from 'react';
-import { CalendarStack, GamesStack, NewsStack, ProfileStack } from './stacks';
+import { CalendarStack, GamesStack, NewsStack, ProfileStack } from '.';
 
 const Tab = createBottomTabNavigator();
 
