@@ -1,4 +1,4 @@
-package com.thatremindsme.newarchitecture;
+package com.trakthis.newarchitecture;
 
 import android.app.Application;
 import androidx.annotation.NonNull;
@@ -19,9 +19,9 @@ import com.facebook.react.fabric.CoreComponentsRegistry;
 import com.facebook.react.fabric.EmptyReactNativeConfig;
 import com.facebook.react.fabric.FabricJSIModuleProvider;
 import com.facebook.react.uimanager.ViewManagerRegistry;
-import com.thatremindsme.BuildConfig;
-import com.thatremindsme.newarchitecture.components.MainComponentsRegistry;
-import com.thatremindsme.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
+import com.trakthis.BuildConfig;
+import com.trakthis.newarchitecture.components.MainComponentsRegistry;
+import com.trakthis.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
 import java.util.ArrayList;
 import java.util.List;
 

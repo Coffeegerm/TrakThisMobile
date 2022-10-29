@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.thatremindsme">
+  package="com.trakthis">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
